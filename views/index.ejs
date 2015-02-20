@@ -1,0 +1,21 @@
+<% var title = 'The Best New E-Commerce Site'; %>
+
+<% include header %>
+
+<div id="products" class="container-fluid">
+  <div class="row">
+    <% for(var i = 0; i < products.length; i++) { %>
+      <% var p = products[i] %>
+      <div class="col-xs-12 col-md-4">
+        <a class="text-center thumbnail" href="products/<%= i %>">
+          <img class="product-image" src="<%= p.picUrl %>">
+          <div class="caption">
+            <span><%= p.name %> for $<%= p.price.toFixed(2) %></span>
+          </div>
+        </a>
+      </div>
+    <% } %>
+  </div>
+</div>
+
+<% include footer %>

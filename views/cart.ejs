@@ -1,0 +1,29 @@
+<% var title = 'Your Cart'; %>
+<% var js = ['cart']; %>
+<% var css = ['cart']; %>
+
+<% include header %>
+
+<div class="container-fluid">
+  <% for(var i = 0; i < cart.length; i++) { %>
+    <% var p = cart[i]; %>
+    <div class="row cart-row">
+      <div class="col-xs-3 col-xs-offset-1">
+        <img src="<%= p.picUrl %>"></img>
+      </div>
+      <div class="col-xs-3"><%= p.name %></div>
+      <div class="col-xs-1"><%= p.quantity %></div>
+      <div class="col-xs-1">$<%= p.price.toFixed(2) %></div>
+      <div id='product-id' data-product-id='<%= p.id %>'></div>
+      <div class="col-xs-2">
+        <button type="button" class="btn btn-danger" id='remove-from-cart'>Remove</button>
+      </div>
+    </div>
+  <% } %>
+  <hr>
+  <div class="row">
+    <h2 class="col-xs-2 col-xs-offset-7">Your total is $</h2>
+  </div>
+</div>
+
+<% include footer %>

@@ -1,0 +1,88 @@
+GETTING STARTED
+===============
+
+```
+sudo npm install
+node app.js
+```
+
+* Navigate to http://localhost:3000 in your web browser
+* Take a look at the views directory and existing templates
+** EJS reference: http://www.embeddedjs.com
+* This is intended to be an open book exercise, so use any references you'd like
+
+TODO
+====
+
+* Implement the following features on the product page (views/product.ejs)
+** Add to cart button
+** Calculate and display average stars of reviews
+
+* Implement the following on the shopping cart page (views/cart.ejs)
+** Center vertical alignment of cart items
+** Remove from cart button
+** Cart total amount
+
+* Note: For both of the above pages, please refer to the design PDFs in the designs directory
+
+GIVENS
+======
+
+Templates
+---------
+
+* The header and footer templates provide Bootstrap and jQuery
+** Feel free to add your favorite libraries if you'd rather use anything in addition to or instead of these!
+* Each template includes its corresponding JavaScript file from /public/js and CSS from /public/css
+* Each template has access to some variables, listed under its filename below:
+
+-----------------
+views/product.ejs
+-----------------
+var product = {
+  id: #,
+  name: '',
+  picUrl: '',
+  price: #,
+  description: '',
+  reviews: [{stars: #, name: '', comment: ''}, ...]
+}
+
+--------------
+views/cart.ejs
+--------------
+var cart = [
+  {
+    id: #,
+    quantity: #,
+    name: '',
+    picUrl: '',
+    price: #
+  },
+  ...
+]
+
+Endpoints
+---------
+
+* Note: ":product_id" in URL indicates a parameter, e.g. 2
+* Each endpoint is listed like so:
+** HTTP_METHOD /U/R/L
+** -> {JSON response}
+
+-----------
+add to cart
+-----------
+POST /cart/:product_id
+-> {success: true} or {success: false, message: ""}
+
+----------------
+remove from cart
+----------------
+DELETE /cart/:product_id
+-> {success: true} or {success: false, message: ""}
+
+Designs
+-------
+
+* See the PDFs in the designs directory

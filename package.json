@@ -1,0 +1,16 @@
+{
+  "name": "frontendtest",
+  "description": "A real on-the-job-task-driven front end coding test",
+  "version": "0.0.1",
+  "private": true,
+  "main": "app",
+  "dependencies": {
+    "express": "4.x",
+    "lodash": "2.4.x",
+    "consolidate": "0.10.x",
+    "ejs": "1.0.x"
+  },
+  "engines": {
+    "node": "0.10.x"
+  }
+}

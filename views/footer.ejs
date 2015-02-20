@@ -1,0 +1,11 @@
+<script src="//cdn.jsdelivr.net/jquery/2.1.1/jquery.min.js"></script>
+<script src="//cdn.jsdelivr.net/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+<% if(typeof js !== 'undefined') { %>
+  <% for(var i = 0; i < js.length; i++) { %>
+    <script src="/static/js/<%= js[i] %>.js"></script>
+  <% } %>
+<% } %>
+
+</body>
+</html>

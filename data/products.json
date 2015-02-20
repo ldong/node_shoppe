@@ -1,0 +1,76 @@
+[
+  {
+    "name": "Vintage Teddy Bear",
+    "price": 59.95,
+    "description": "An old school teddy bear from before they were cool.",
+    "reviews": [
+      {
+        "stars": 3,
+        "name": "Mary",
+        "comment": "I think it's pretty cool."
+      },
+      {
+        "stars": 5,
+        "name": "Jeff",
+        "comment": "This is my favorite teddy."
+      }
+    ]
+  },
+  {
+    "name": "Kitten",
+    "price": 70,
+    "description": "This kitten also includes its favorite paper bag.",
+    "reviews": [
+      {
+        "stars": 1,
+        "name": "Anne",
+        "comment": "I guess I'm just more of a dog person."
+      },
+      {
+        "stars": 4,
+        "name": "Joe",
+        "comment": "Great kitten!"
+      }
+    ]
+  },
+  {
+    "name": "Kid's Bike",
+    "price": 50,
+    "description": "Includes training wheels and bell!",
+    "reviews": [
+      {
+        "stars": 2,
+        "name": "José",
+        "comment": "Not well made."
+      }
+    ]
+  },
+  {
+    "name": "Seagull",
+    "price": 1,
+    "description": "We are having a huge sale on seagulls.",
+    "reviews": [
+      {
+        "stars": 5,
+        "name": "Nick",
+        "comment": "It's a pretty good deal."
+      },
+      {
+        "stars": 1,
+        "name": "Sam",
+        "comment": "Ugh I hate seagulls!"
+      },
+      {
+        "stars": 2,
+        "name": "Pat",
+        "comment": "It flew away..."
+      }
+    ]
+  },
+  {
+    "name": "Broken Watch",
+    "price": 10.50,
+    "description": "It tells you the correct time twice per day!",
+    "reviews": []
+  }
+]

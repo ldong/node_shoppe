@@ -1,0 +1,7 @@
+.cart-row {
+  min-height: 160px;
+}
+
+.cart-row img {
+  max-height: 150px
+}
